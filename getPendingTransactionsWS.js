@@ -20,4 +20,4 @@ const main = async () => {
     });
 };
 
-main(); // THIS IS WHAT THE MEMPOOL LOOKS LIKE
+main(); // THIS IS WHAT THE MEMPOOL LOOKS LIKE!
