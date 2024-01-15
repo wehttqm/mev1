@@ -4,7 +4,7 @@ require('dotenv').config();
 const web3 = new Web3(new Web3.providers.WebsocketProvider(process.env.LOCAL_RPC_WS));
 
 const main = async () => {
-    const subscription = await web3.eth.subscribe('newBlockHeaders', (err) => {
+    const subscription = await web3.eth.subscribe('pendingTransactions', (err) => {
         if (err) {
             console.log(err)
         }
@@ -15,7 +15,7 @@ const main = async () => {
             console.log(`Hash: ${tx.hash} | Nonce: ${tx.nonce} | From: ${tx.from} | To: ${tx.to}`)
             //console.log(tx)
         } catch (err) {
-            console.error(err)
+            //console.error(err)
         }
     });
 };
