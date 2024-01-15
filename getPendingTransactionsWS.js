@@ -4,7 +4,7 @@ require('dotenv').config();
 const web3 = new Web3(new Web3.providers.WebsocketProvider(process.env.LOCAL_RPC_WS));
 
 const main = async () => {
-    const subscription = await web3.eth.subscribe('pendingTransactions', (err) => {
+    const subscription = await web3.eth.subscribe('newBlockHeaders', (err) => {
         if (err) {
             console.log(err)
         }
