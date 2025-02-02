@@ -1,4 +1,4 @@
-#A collection of MEV testing programs, largely inspired by Solid Quant
+# A collection of MEV testing programs, largely inspired by Solid Quant
 Much of this repository is dedicated to testing performance differences between local vs. cloud-based Ethereum Mainnet RPCs. If you're interested in MEV, you'll need to choose between a locally hosted node and a cloud-based one from a company like Infura. 
 
 ## Specs
